@@ -1,0 +1,217 @@
+body, html{
+  padding: 0px;
+  margin: 0px;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.topSection {
+  background-color: orange;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.holder {
+  width: 100%;
+  background-color: red; 
+  position: relative;
+  z-index: 200;
+  background: #fff;
+/*   display: flex;
+  justify-content: center;
+  align-items: flex-start; */
+}
+
+.holderB {
+  width: 100%;
+  background-color: red; 
+  position: relative;
+  z-index: 200;
+  background: #fff;
+/*   display: flex;
+  justify-content: center;
+  align-items: flex-start; */
+}
+
+
+
+.section1Helper {
+  positon: fixed;
+}
+
+.section1 {
+  width: 50%;
+  background-color: yellow;
+  height: 100vh; 
+  position: absolute;
+  left: 0;
+  transition: 1s width cubic-bezier(.77,0,.175,1);
+  background: url('https://www.transparenttextures.com/patterns/black-mamba.png');
+}
+
+.section1 h1 {
+  text-align: center;
+}
+
+.innerSec1 {
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  top: 0;
+}
+
+.section2 {
+  width: 50%;
+  left: 50%;
+  background-color: green;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 100;
+}
+
+.section2 h3 {
+  text-align: center;
+}
+
+.section2 p {
+  margin: 32px;
+  font-family: roboto;
+  line-height: 28px;
+}
+
+.inner1 {
+  width: 100%;
+  height: 100vh;
+  background: lightblue;
+  margin-top: 0;
+  padding-top: 16px;
+  background-image: url('https://i.pinimg.com/736x/f4/51/3d/f4513da29275df3dca08244140a375d8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner2 {
+  width: 100%;
+  height: 100vh;
+  min-height: 300px;
+  background: lightpink;
+  margin-top: 0;
+  padding-top: 16px;
+  background-image: url('http://www.jakpost.travel/imgfiles/full/111/1117272/hd-wallpapers-for-background-editing.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner3 {
+  width: 100%;
+  min-height: 300px;
+  height: 100vh;
+  background: purple;
+  margin-top: 0;
+  padding-top: 16px;
+  background-image:url('https://i.pinimg.com/736x/1f/ae/ef/1faeef67c132e4b6c91e4f17de6b4e49--face-reference-portrait-reference.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+ 
+}
+
+.keepDown {
+   overflow: hidden;
+   position: relative;
+}
+
+.still-text {
+  width: 80%;
+  height: 50%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  position: absolute;
+  z-index: 100;
+}
+
+.hov {
+/*   transition: transform .2s; */
+  
+  transition: calc(1s * 20) transform ease-in-out;
+}
+
+.hov:hover { 
+  transform: scale(1.15);
+}
+
+.midSection {
+  height: 100vh;
+  min-height: 300px;
+  width: 100%;
+  background-color: blue;
+  position: relative; 
+}
+
+
+.bottomSection {
+  height: 100vh;
+  min-height: 300px;
+  width: 100%;
+  background-color: blue;
+  position: relative; 
+}
+
+.vhelp {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+/*     margin-left: -5px; */
+}
+
+
+/*********************
+ MEDIA SCREEN CHANGES
+**********************/
+@media only screen and (max-width: 600px){ 
+  .holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section1 {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  
+  .section2 {
+    left: 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  .keepDown {
+    width: 100%;
+  }
+  
+  .innerSec1 {
+    height: 100%;
+  }
+  
+  .still-text {
+    width: 100%;
+    transform: translate(-50%, 25%);
+  }
+  
+}
